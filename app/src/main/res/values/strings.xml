@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Wheather_app_open_weather_api</string>
+    <string name="wheather_temp">Текущая температура в городе</string>
+    <string name="check_wheather">Узнать погоду</string>
 </resources>

@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#6194BC"
     tools:context=".MainActivity">
 
     <androidx.appcompat.widget.AppCompatButton
@@ -15,9 +15,9 @@
         android:layout_centerInParent="true"
         android:paddingVertical="10dp"
         android:paddingHorizontal="20dp"
-        android:text="Узнать погоду"
-        android:textSize="20dp"
-        android:background="#DC8D8D"
+        android:text="@string/check_wheather"
+        android:textSize="20sp"
+        android:background="#5461A8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,14 +29,27 @@
         android:layout_height="wrap_content"
         android:layout_margin="40dp"
         android:fontFamily="sans-serif-black"
-        android:text="Текущая температура"
+        android:text="@string/wheather_temp"
         android:maxLines="3"
         android:gravity="center"
         android:textColor="@color/black"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/humidityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="Влажность: "
+        android:textSize="36sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
